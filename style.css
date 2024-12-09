@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 470px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.search-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background: #5b548a;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #4a4372;
+}
+
+.weather-container {
+    text-align: center;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.temperature h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.detail {
+    margin: 1rem 0;
+}
+
+.detail p:first-child {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.detail p:last-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#weather-icon {
+    width: 80px;
+    height: 80px;
+}
